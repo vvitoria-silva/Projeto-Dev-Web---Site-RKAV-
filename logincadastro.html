@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulário de Login e Registro com HTML5 e CSS3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/logincadastro.css" />
+  
+  
+</head>
+<body>
+  <div class="container" >
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+     
+    <div class="content">      
+      <!--FORMULÁRIO DE LOGIN-->
+      <div id="login">
+        <form method="post" action=""> 
+          <h1>Login</h1> 
+       <!---  <p> 
+            <label for="nome_login">Seu nome</label>
+            <input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"/>
+          </p> --> 
+           
+          <p> 
+            <label for="email_login">E-mail</label>
+            <input id="email_login" name="email_login"  type="password" placeholder="" /> 
+          </p>
+
+          <p> 
+            <label for="senha_cad">Senha</label>
+            <input id="senha_cad" name="senha_cad"  type="password" placeholder=""/>
+          </p>
+           
+          <p> 
+            <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+            <label for="manterlogado">Continuar logado</label>
+          </p>
+           
+          <p> 
+            <input type="submit" value="Logar" class="btnLogar"> 
+          </p>
+           
+          <p class="link">
+            Ainda não tem uma conta?
+            <a href="#paracadastro"> Cadastre-se</a>
+          </p>
+        </form>
+      </div>
+      <br><br><br><br>
+ 
+      <!--FORMULÁRIO DE CADASTRO-->
+      <div id="cadastro">
+        <form method="post" action=""> 
+          <h1>Cadastro</h1> 
+           
+          <p> 
+            <label for="nome_cad">* Nome</label>
+            <input id="nome_cad" name="nome_cad"  type="text" placeholder="" />
+          </p>
+
+           <p> 
+            <label for="cpf_cad">* Seu cpf</label>
+            <input id="cpf_cad" name="cpf_cad"  type="text" placeholder="" />
+          </p>
+
+          <p> 
+            <label for="cep_cad">* Cep</label>
+            <input id="cep_cad" name="cep_cad"  type="text" placeholder="" />
+          </p>
+          
+          <p> 
+            <label for="end_cad">* Endereço</label>
+            <input id="end_cad" name="end_cad"  type="text" placeholder="" />
+          </p>
+          <p> 
+            <label for="num_cad">* Número</label>
+            <input id="num_cad" name="num_cad"  type="text" placeholder="" />
+          </p>
+          <p> 
+            <label for="bairr_cad">Bairro</label>
+            <input id="bairr_cad" name="bairr_cad"  type="text" placeholder="" />
+          </p>
+          <p> 
+            <label for="est_cad">* Estado</label>
+            <input id="est_cad" name="est_cad"  type="text" placeholder="" />
+          </p>
+
+          <p> 
+            <label for="cel_cad">* Tel. celular</label>
+            <input id="cel_cad" name="cel_cad"  type="text" placeholder="" />
+          </p>
+          <p> 
+            <label for="fix_cad">Tel. fixo</label>
+            <input id="fix_cad" name="fix_cad"  type="text" placeholder="" />
+          </p>
+           
+          <p> 
+            <label for="email_cad">* E-mail</label>
+            <input id="email_cad" name="email_cad"  type="email" placeholder=""/> 
+          </p>
+           
+          <p> 
+            <label for="senha_cad">* Crie sua senha</label>
+            <input id="senha_cad" name="senha_cad" type="password" placeholder=""/>
+          </p>
+           
+          <p> 
+            <input type="submit" value="Cadastrar" class="btn btn-danger"/> 
+          </p>
+           
+          <p class="link">  
+            Já tem conta?
+            <a href="#paralogin"> Ir para Login </a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>  
+</body>
+</html>

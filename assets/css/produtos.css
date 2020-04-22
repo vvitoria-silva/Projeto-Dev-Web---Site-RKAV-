@@ -1,0 +1,104 @@
+h3{
+   
+    font-family: italic; 
+ 
+}
+
+.navbar-nav{
+
+    color:white;
+    font-family: italic;
+}
+.navbar-inverse>.container>.nav>li>a{
+    color:white;
+   
+}
+
+
+.navbar-inverse{
+
+     background-color:rgba(100,100,100,0.2);
+     border-color: rgba(100,100,100,0.2);
+}
+
+
+/*#itens ul li{
+    font-size: 15px;
+    display: inline-block;
+    
+    
+} */ 
+#itens ul li  a { 
+   color: white;
+   padding: 12px;
+   font-size: 14px;
+   border: 2px transparent solid;
+   /*margin-top: 20px;*/
+   
+  
+  
+   
+   
+}
+.navbar-nav{
+    display: inline;
+    padding-left: 150px;
+    
+   
+  
+    
+}
+
+.bg-footer{
+    background-color: rgb(21, 14, 85);
+    color: white;
+}
+.container{
+    text-align: center;
+}
+.fa-user-circle{
+    display: inline;
+   
+    
+}
+.fa-home{
+    display: inline;
+   
+}
+
+.fa-facebook{
+    color: rgb(73, 120, 248);
+   
+}
+#cama{
+    margin-top: 100px;
+}
+.container{
+    margin-bottom: 50px;
+}
+.fa-instagram{
+    color:rgb(134, 35, 35);
+}
+.fa-whatsapp{
+
+
+    color:green;
+}
+/*.rodape{
+    padding:20px;
+     background-color: black; 
+    justify-content: center;   
+    width: 100%;
+     color: #fff; 
+    text-align: center;
+}*/
+.navbar-inverse {
+
+    background-color:   #138D75;
+    border:green;
+    
+
+
+}
+
+

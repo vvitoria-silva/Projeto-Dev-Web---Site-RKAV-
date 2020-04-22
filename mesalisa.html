@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/produtos.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/0dc7328386.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/js1.js"></script>
+
+    <title>Toalha De Mesa Lisa</title>
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="nav navbar-nav ">
+                    <h1></h1>
+                    <p></p>
+                </div>
+                <nav class="nav navbar-nav navbar-center">
+                    <li><a class="hover" href="index2.html">
+                            <h4><i class="fa fa-home"></h4></i>
+                        </a>
+                    <li><a class="hover" href="cama.html">
+                            <h5>CAMA</h5>
+                        </a>
+                        <!--   <ul class="dropdown-menu">
+                                <li><a href="seçãoCamaTradicional.php">TRADICIONAL</a></li>
+                              
+                                <li><a href="seçãoSuperK.php" target="blank">SUPER KING</a></li> 
+                            </ul> -->
+                    </li>
+                    <li><a class="hover" href="mesa.html">
+                            <h5>MESA</h5>
+                        </a></li><!-- final barra denavegação/opções-->
+                    <li><a class="hover" href="banho.html">
+                            <h5>BANHO</h5>
+                        </a></li><!-- final barra denavegação/opções-->
+                    <li><a class="hover" href="novidades.html">
+                            <h5>LANÇAMENTOS</h5>
+                        </a></li><!-- final barra denavegação/opções-->
+                    <li> <a href="">
+                            <h5><i class="fa fa-user-circle"> Login/Cadastro</h5></i>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <!-- inciando dropdown hamburger-->
+                        <a href="#" data-toggle="dropdown">
+                            <h5><i class="glyphicon glyphicon-menu-hamburger"></i></h5>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="login.html" target="blank"><i class="fa fa-user-tie"> </i> Administrador</a>
+                            </li>
+                            <!--listar item do menu dropdown-->
+                            <li><a href=""><i class="fa fa-comments" aria-hidden="true"> </i> Comentário</a></li>
+                            <li><a href=""><i class="fa fa-comments" aria-hidden="true"> </i> Deixe um comentário</a>
+                            </li>
+                        </ul>
+                    </li><!-- fim dropdown hamburger-->
+                </nav>
+            </div>
+        </nav>
+    </header>
+    <br><br><br><br><br><br><br>
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="index2.html">Pagina Inicial</a></li>
+            <li><a href="active"></a>Toalha De Mesa Lisa</li>
+        </ul>
+        <div class="container">
+            <h1>Toalha De Mesa Lisa</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="thumbnail">
+                        <img src="assets/img1/WhatsApp Image 2020-04-18 at 19.14.56 (6).jpeg" alt="50%" width="50%">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Toalha De Mesa Lisa</h3>
+                    <p><strong>Descrição:</strong> Toalha De Mesa Lisa,com aplicação de tecido 100% algodão, tecido estampado,praticidade e sofisticação.<p>
+                            <p><strong>Tamanho/Medidas:</strong> 65 cm de comprimento X 130 de largura.<p>
+                                    <p><strong>Quantidade:</strong> 1
+                                        <p><strong> R$</strong> 60,00</p>
+                                        qtd: <input type="number" value="1" min="1" max="10" id="qtd9">
+                                        <button type="button" id="adicionar1" id="produto1"
+                                            onclick="AddCarrinho('Toalha De Mesa Lisa', document.getElementById('qtd9').value, '60', 9)"> Comprar
+                                        </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <script>
+            function AddCarrinho(produto, qtd, valor, posicao) {
+                localStorage.setItem("produto" + posicao, produto);
+                localStorage.setItem("qtd" + posicao, qtd);
+                valor = valor * qtd;
+                localStorage.setItem("valor" + posicao, valor);
+                alert("Produto adicionado ao carrinho!");
+            }
+        </script>
+        
+<footer class="container-fluid text-center bg-footer margin">
+    <div class="rodape">
+        <h2></h2>
+        <h4>Confecções em Cama,Mesa e Banho</h4>
+        <b></br><br>
+            <h5>Siga a rkav nas redes sociais: </h5>
+                <h3><a href="https://www.pt-br.facebook.com" target=blank><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com" target=blank><i class="fa fa-instagram"
+                            aria-hidden="true"></i></a></h3>
+                <address class="endereço">
+                    <h5> Rua São João - Centro.</h5>
+                    Cep: 69000.000 | Manaus - AM - Brasil<br>
+                    (92) 99130-6070 | (92) 3045-6370 | (92) 4065-7695<br>
+                    <h4><i class="fa fa-whatsapp" aria-hidden="true"> </i> (92) 9965-9885 </h4>
+                    <h4>E-mail: <i class="fa fa-envelope-o" aria-hidden="true"></i></a> rkav@hotmail.com</h4>
+                </address>
+                <strong>
+                    <h4> Copyrigth Rkav 2020 - Todos os direitos reservados</h4>
+                </strong>
+    </div>
+
+</footer>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+
+
+
+
+
+      
+
+          h1{
+              text-shadow:2px 2px 3px #CCCCCC; 
+      
+          }
+         h1{
+      
+          font-family: italic; 
+          /* estilização na fonte da pagina do produto especifico do painel lancamentos que pode servir para todos os produtos especificos de todas as paginas */
+       
+         }
+         h3{
+
+           /* text-align: center;*/
+            text-align: justify;
+            
+            
+            }
+            .lençois-superking1{
+            
+            
+                display: flex;
+                justify-content: center;
+                
+                margin-right: 30px;
+            
+               
+            
+            
+            }
+            .container{
+                text-align: justify;
+            }
+            .breadcrumb{
+                margin-top:20px;
+
+            }
+      
+         
+    
+      

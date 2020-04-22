@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <script type="text/javascript" src="assets/js/login.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+ 
+  
+    <div class="container">
+        
+        <div class="form-signin" style="background: rgb(247, 247, 247);">
+            <h2 class="text-center" >Administrador</h2>
+        
+            <form form action="/pagina-processa-dados-do-form" method="POST" method="post" name="dados" onSubmit="return enviardados();">
+                <label>Usuário</label>
+                <input type="text" name="tx_email" id="tx_email" placeholder="Digite seu e-mail" class="form-control"><br>
+                
+                <label>Senha</label>
+                <input maxlength=8 type="password" name="password" id="tx_password" placeholder="Digite a sua senha" class="form-control"><br>
+                
+                <input type="submit" name="btnLogin" value="Acessar"  class="btn btn-success btn-block">
+                
+                
+                
+                
+                
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+      
+
+   <!---- <form action="/pagina-processa-dados-do-form" method="post" name="dados" onSubmit="return enviardados();">
+
+        <div>
+            <label for="email">E-mail:</label>
+            <input name="tx_email" type="text" id="tx_email" />
+        </div>
+    
+        <div>
+            <label for="password">Senha:</label>
+            <input name="tx_password" maxlength=8 type="password" id="tx_password" placeholder="Digite sua senha" />
+        </div>
+    
+        <div class="button">
+            <button type="submit">Entrar</button>
+        </div>
+    </form> -->
+       
+        <script src="assets/js/jquery-3.2.1.min.js"></script>
+        <script src="assets/js/bootstrap.js"></script>
+</body>
+</html>
+
+

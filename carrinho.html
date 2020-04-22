@@ -1,0 +1,62 @@
+<meta charset="UTF-8">
+<link rel="stylesheet" href="assets/css/caixa.css">
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<link rel="stylesheet" href="assets/css/style2.css">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<div id="atras">
+	<div id="caixa">
+		<div id="itens"> </div>
+		<div>Total: <span id="total"></span> </div>
+
+		<script>
+			var total = 0; // variável que retorna o total dos produtos que estão na LocalStorage.
+			var i = 0;     // variável que irá percorrer as posições
+			var valor = 0; // variável que irá receber o preço do produto convertido em Float.
+
+			for (i = 1; i <= 99; i++) // verifica até 99 produtos registrados na localStorage
+			{
+				var prod = localStorage.getItem("produto" + i + ""); // verifica se há recheio nesta posição. 
+				if (prod != null) {
+					// exibe os dados da lista dentro da div itens
+					document.getElementById("itens").innerHTML += localStorage.getItem("qtd" + i) + " x ";
+					document.getElementById("itens").innerHTML += localStorage.getItem("produto" + i);
+					document.getElementById("itens").innerHTML += " ";
+					document.getElementById("itens").innerHTML += "R$: " + localStorage.getItem("valor" + i) + "<hr>";
+
+					// calcula o total dos recheios
+					valor = parseFloat(localStorage.getItem("valor" + i)); // valor convertido com o parseFloat()
+					total = (total + valor); // arredonda para 2 casas decimais com o .toFixed(2)
+				}
+			}
+			// exibe o total dos recheios
+			document.getElementById("total").innerHTML = total.toFixed(2); 
+		</script>
+
+		<button type="button" onclick=" localStorage.clear(); location.reload();"> Limpar carrinho </button>
+	</div>
+</div>
+
+
+<footer class="container-fluid text-center bg-footer margin">
+	<div class="rodape">
+		<h2></h2>
+		<h4>Confecções em Cama,Mesa e Banho</h4>
+		<b></br><br>
+			<h5>Siga a rkav nas redes sociais: </h4>
+				<h3><a href="https://www.pt-br.facebook.com" target=blank><i class="fa fa-facebook"></i></a>
+					<a href="https://www.facebook.com" target=blank><i class="fa fa-instagram"
+							aria-hidden="true"></i></a></h3>
+				<address class="endereço">
+
+					<h5> Rua São João - Centro.</h5>
+					Cep: 69000.000 | Manaus - AM - Brasil<br>
+					(92) 99130-6070 | (92) 3045-6370 | (92) 4065-7695<br>
+					<h4><i class="fa fa-whatsapp" aria-hidden="true"> </i> (92) 9965-9885 </h4>
+					<h4>E-mail: <i class="fa fa-envelope-o" aria-hidden="true"></i></a> rkav@hotmail.com</h4>
+				</address>
+				<strong>
+					<h4> Copyrigth Rkav 2020 - Todos os direitos reservados</h4>
+				</strong>
+	</div>
+
+</footer>

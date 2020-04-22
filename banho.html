@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/banho.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/0dc7328386.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/js1.js"></script>
+
+    <title>Banho</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="nav navbar-nav ">
+                    <h1></h1>
+                    <p></p>
+                </div>
+                <nav class="nav navbar-nav navbar-center">
+
+                    <li><a class="hover" href="index2.html">
+                            <h4><i class="fa fa-home"></h4></i>
+                        </a>
+                    <li><a class="hover" href="cama.html">
+                            <h5>CAMA</h5>
+                        </a>
+                        <!--   <ul class="dropdown-menu">
+                            <li><a href="seçãoCamaTradicional.php">TRADICIONAL</a></li>
+                          
+                            <li><a href="seçãoSuperK.php" target="blank">SUPER KING</a></li> 
+                        </ul> -->
+                    </li>
+
+                    <li><a class="btn btn-outline-light" href="mesa.html">
+                            <h5>MESA</h5>
+                        </a></li><!-- final barra denavegação/opções-->
+                    <li><a class="hover" href="banho.html">
+                            <h5>BANHO</h5>
+                        </a></li><!-- final barra denavegação/opções-->
+                    <li><a class="hover" href="novidades.html">
+                            <h5>LANÇAMENTOS</h5>
+                        </a></li><!-- final barra denavegação/opções-->
+
+                    <li> <a href="">
+                            <h5><i class="fa fa-user-circle"> Entrar/Cadastro</h5></i>
+                        </a>
+
+                    </li>
+
+                    <li class="dropdown">
+                        <!-- inciando dropdown hamburger-->
+                        <a href="#" data-toggle="dropdown">
+                            <h5><i class="glyphicon glyphicon-menu-hamburger"></i></h5>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="login.html" target="blank"><i class="fa fa-user-tie"> </i> Administrador</a>
+                            </li>
+                            <!--listar item do menu dropdown-->
+                            <li><a href="comentarios.php"><i class="fa fa-comments" aria-hidden="true"> </i>
+                                    Cometário</a></li>
+                            <li><a href="formulario.php"><i class="fa fa-comments" aria-hidden="true"> </i> Deixe um
+                                    comentário</a></li>
+                        </ul>
+                    </li><!-- fim dropdown hamburger-->
+                </nav>
+            </div>
+        </nav>
+    </header>
+
+    <section id="cama">
+        <div class="container-fluid text-center margin cama">
+            <h3 class="margin">Banho</h3>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+
+                    <img src="assets/img1/fundo.jpeg" alt="" width="100%">
+                    <h5>toalha de banho Magnolia</h5>
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd1">
+                    <button type="button" id="adicionar1" id="produto1"
+                        onclick="AddCarrinho('toalha-magnolia', document.getElementById('qtd1').value, '124', 1)"> Comprar
+                    </button>
+                    <a href="toalha-magnolia.html" target="blank">confira</a>
+
+                </div>
+                <div class="col-lg-4">
+                    <img src="assets/img1/40fde6be36f88ee9aa9f5bf4c690cefa.jpg" alt="" width="67%">
+                    <h5>toalha de banho Yuna</h5>
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd2">
+                    <button type="button" id="adicionar1" id="produto1"
+                        onclick="AddCarrinho('toalha Yuna', document.getElementById('qtd2').value, '130', 2)"> Comprar
+                    </button>
+                    <a href="toalha-Yuna.html">confira</a>
+                </div>
+                <div class="col-lg-4">
+                    <img src="assets/img1/092cb152a70dfc6db7a68cccf87c0c3b.jpg" alt="" height="80%" width="67%">
+                    <h5>toalha de banho Opera</h5>
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd3">
+                    <button type="button" id="adicionar1" id="produto1"
+                        onclick="AddCarrinho('toalha Opera', document.getElementById('qtd3').value, '120', 3)"> Comprar
+                    </button>
+                    <a href="toalha-opera.html">confira</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="assets/img1/WhatsApp Image 2020-04-18 at 18.50.15 (1).jpeg" alt="" width="67%">
+                    <h5>Toalha Banhão Karsten</h5>
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd4">
+                    <button type="button" id="adicionar1" id="produto1"
+                        onclick="AddCarrinho('Toalha Banhão Karsten', document.getElementById('qtd4').value, '290', 4)"> Comprar
+                    </button>
+                    <a href="toalha-banhão.html">confira</a>
+                </div>
+                <div class="col-lg-4">
+                    <img src="assets/img1/WhatsApp Image 2020-04-18 at 18.50.15 (2).jpeg" alt="" width="67%">
+                    <h5>Toalha Donatta</h5>
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd5">
+                    <button type="button" id="adicionar1" id="produto1"
+                        onclick="AddCarrinho('Toalha Donatta', document.getElementById('qtd5').value, '167', 5)"> Comprar
+                    </button>
+                    <a href="toalha-donatta.html">confira</a>
+                </div>
+                <div class="col-lg-4">
+                    <img src="assets/img1/WhatsApp Image 2020-04-18 at 18.49.56 (2).jpeg" alt="" width="67%">
+                    <h5>Toalha Fio Penteado</h5>
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd6">
+                    <button type="button" id="adicionar1" id="produto1"
+                        onclick="AddCarrinho('toalha-fio penteado', document.getElementById('qtd6').value, '56', 6)"> Comprar
+                    </button>
+                    <a href="toalha-fio.html">confira</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="assets/img1/WhatsApp Image 2020-04-18 at 18.49.56 (1).jpeg" alt="" width="67%">
+                    <h5>Toalha Teka</h5>
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd7">
+                    <button type="button" id="adicionar1" id="produto1"
+                        onclick="AddCarrinho('toalha teka', document.getElementById('qtd7').value, '25', 7)"> Comprar
+                    </button>
+                    <a href="toalha-teka.html">confira</a>
+                </div>
+                <div class="col-lg-4">
+                    <img src="assets/img1/WhatsApp Image 2020-04-18 at 18.49.57 (1).jpeg" alt="" width="67%">
+                    <h5>Toalha Fio Egípcio</h5>
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd8">
+                    <button type="button" id="adicionar1" id="produto1"
+                        onclick="AddCarrinho('toalha fio egpício', document.getElementById('qtd8').value, '95', 8)"> Comprar
+                    </button>
+                    <a href="toalha-egpcio.html">confira</a>
+                </div>
+            
+                <div class="col-lg-4">
+                    <img src="assets/img1/WhatsApp Image 2020-04-18 at 18.49.57.jpeg" alt="" width="50%">
+                    <h5>Toalha West</h5>
+                    qtd: <input type="number" value="1" min="1" max="10" id="qtd9">
+                    <button type="button" id="adicionar1" id="produto1"
+                        onclick="AddCarrinho('toalha west', document.getElementById('qtd9').value, ' 60', 9)"> Comprar
+                    </button>
+                    <a href="toalha-west.html">confira</a>
+                </div>
+            </div>
+        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="assets/img1/WhatsApp Image 2020-04-18 at 18.49.58.jpeg" alt="" width="67%">
+                <h5>Toalha Fios Bordado</h5>
+                qtd: <input type="number" value="1" min="1" max="10" id="qtd10">
+                <button type="button" id="adicionar1" id="produto1"
+                    onclick="AddCarrinho('toalha fios bordados', document.getElementById('qtd10').value, '55', 10)"> Comprar
+                </button>
+                <a href="toalha-bordado.html">confira</a>
+            </div>
+            <div class="col-lg-4">
+                <img src="assets/img1/WhatsApp Image 2020-04-18 at 18.49.58 (1).jpeg" alt="" width="85%">
+                <h5>Toalha Karsten Natural</h5>
+                qtd: <input type="number" value="1" min="1" max="10" id="qtd11">
+                <button type="button" id="adicionar1" id="produto1"
+                    onclick="AddCarrinho('toalha karsten natural', document.getElementById('qtd11').value, '69', 11)"> Comprar
+                </button>
+                <a href="toalha-natural.html">confira</a>
+            </div>
+        
+            <div class="col-lg-4">
+                <img src="assets/img1/WhatsApp Image 2020-04-18 at 18.50.14 (1).jpeg" alt="" width="67%">
+                <h5>Toalha Buddemeyer</h5>
+                qtd: <input type="number" value="1" min="1" max="10" id="qtd12">
+                <button type="button" id="adicionar1" id="produto1"
+                    onclick="AddCarrinho('toalha Buddemeyer', document.getElementById('qtd12').value, '89,90', 12)"> Comprar
+                </button>
+                <a href="toalha-buddemeyer.html">confira</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function AddCarrinho(produto, qtd, valor, posicao) {
+            localStorage.setItem("produto" + posicao, produto);
+            localStorage.setItem("qtd" + posicao, qtd);
+            valor = valor * qtd;
+            localStorage.setItem("valor" + posicao, valor);
+            alert("Produto adicionado ao carrinho!");
+        }
+    </script>
+        
+    
+</section>
+
+
+    <footer class="container-fluid text-center bg-footer margin">
+        <div class="rodape">
+            <h2></h2>
+            <h4>Confecções em Cama,Mesa e Banho</h4>
+            <b></br><br>
+                <h5>Siga a rkav nas redes sociais: </h5>
+                <h3><a href="https://www.pt-br.facebook.com" target=blank><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com" target=blank><i class="fa fa-instagram"
+                            aria-hidden="true"></i></a></h3>
+                <address class="endereço">
+                    <h5> Rua São João - Centro.</h5>
+                    Cep: 69000.000 | Manaus - AM - Brasil<br>
+                    (92) 99130-6070 | (92) 3045-6370 | (92) 4065-7695<br>
+                    <h4><i class="fa fa-whatsapp" aria-hidden="true"> </i> (92) 9965-9885 </h4>
+                    <h4>E-mail: <i class="fa fa-envelope-o" aria-hidden="true"></i></a> rkav@hotmail.com</h4>
+                </address>
+                <strong>
+                    <h4> Copyrigth Rkav 2020 - Todos os direitos reservados</h4>
+                </strong>
+        </div>
+
+    </footer>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+
+</body>
+
+</html>
